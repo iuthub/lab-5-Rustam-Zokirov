@@ -17,4 +17,5 @@ In this exercises, you should make a form which takes payment information from s
 <br><img src="img/2.png" width=600>
 3. Save the form data:
 <br><img src="img/3.png" width=600>
-
+4. Data validation (added atribute `requred` to input tag, so that person must fill all the field to submit the form):
+<br><img src="img/3.png" width=600>

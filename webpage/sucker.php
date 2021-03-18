@@ -12,7 +12,6 @@
 	
 	<p>Your information has been received.</p1>
 	
-	
 	<dl>
 		<dt>Name</dt>
 		<dd>
@@ -45,7 +44,8 @@
 			$section = $_POST['section'];
 			$credit_card = $_POST['credit_card'];
 			$credit_card_type = $_POST['credit_card_type'];		
-					
+			
+			
 			$fp = fopen('suckers.txt', 'a');
 			fwrite($fp, $name).";";
 			fwrite($fp, $section).";";
@@ -53,6 +53,11 @@
 			fwrite($fp, $credit_card_type)."\n";
 			
 			fclose($fp);
+			
+			
+			/*
+			file_put_contents("suckers.txt", $name.";".$section.";".$credit_card.";".$credit_card_type);
+			*/
 		}
 	?>
 	
