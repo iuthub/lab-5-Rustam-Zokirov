@@ -28,10 +28,33 @@
 		<dd>
 			<?= $_REQUEST['credit_card'] ?>
 			<?= $_REQUEST['credit_card_type'] ?>
-		<dd>
-
 		</dd>
 	</dl>
+	
+	<p>Here are all the suckers :D</p>
+	
+	<?php
+		$myfile = fopen("suckers.txt", "r");
+		echo fread($myfile,filesize("suckers.txt"));
+		fclose($myfile);
+	?> 
+	
+	<?php 
+		if(isset($_POST['submit'])){
+			$name = $_POST['name'];
+			$section = $_POST['section'];
+			$credit_card = $_POST['credit_card'];
+			$credit_card_type = $_POST['credit_card_type'];		
+					
+			$fp = fopen('suckers.txt', 'a');
+			fwrite($fp, $name).";";
+			fwrite($fp, $section).";";
+			fwrite($fp, $credit_card).";";
+			fwrite($fp, $credit_card_type)."\n";
 			
+			fclose($fp);
+		}
+	?>
+	
 </body>
 </html>
