@@ -13,3 +13,5 @@ In this exercises, you should make a form which takes payment information from s
 ### Screenshots:
 1. Creating a form:
 <br><img src="img/1.png" width=600>
+2. Displaying input data:
+<br><img src="img/2.png" width=600>
