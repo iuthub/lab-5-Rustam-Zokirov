@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Buy Your Way to a Better Education!</title>
-		<link href="buyagrade.css" type="text/css" rel="stylesheet" />
+		<link href="buyagrade.css" type="text/css" rel="stylesheet"/>
 	</head>
 	
 	<body>
@@ -12,28 +12,45 @@
 			The rough economy, along with recent changes in University of Washington policy, now allow us to offer grades for money.  That's right!  All you need to get a 4.0 in this course is cold, hard, cash.
 		</p>
 		
-		<hr />
+		<hr/>
 		
 		<h2>Give Us Your Money</h2>
-		<dl>
-			<dt>Name</dt>
-			<dd>
-				???
-			</dd>
+		<form action="sucker.php" method="post">
+
+			<dl>
+				<dt>Name</dt>
+				<dd>
+                	<input type="text" name="name" id="name">
+				</dd>
+				
+				<dt>Section</dt>
+				<dd>
+		            <select name="section">
+		                <option value="001">001</option>
+		                <option value="002">002</option>
+		                <option value="003">003</option>
+		                <option value="004">004</option>
+		                <option value="005">005</option>
+
+		            </select>
+				</dd>
+				
+				<dt>Credit Card</dt>
+				<dd>
+	                <input type="text" name="credit_card" id="credit_card">
+	                <br>
+	                <input type="radio" name="credit_card_type" value="mastercard" checked> MasterCard
+                	<input type="radio" name="credit_card_type" value="visa"> Visa
+				</dd>
+			</dl>
 			
-			<dt>Section</dt>
-			<dd>
-				???
-			</dd>
-			
-			<dt>Credit Card</dt>
-			<dd>
-				???
-			</dd>
-		</dl>
-		
-		<div>
-			I am a giant sucker.
-		</div>
+			<div>
+
+				<input type="submit" value="I am a giant sucker.">
+
+			</div>
+				
+		</form>
 	</body>
 </html>
+

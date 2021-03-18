@@ -9,3 +9,7 @@ In this exercises, you should make a form which takes payment information from s
 - **Student ID**: U1910049
 - **Student Name**: Rustam Zokirov
 - **Section Number**: 002
+
+### Screenshots:
+1. Creating a form:
+<br><img src="img/1.png" width=600>
